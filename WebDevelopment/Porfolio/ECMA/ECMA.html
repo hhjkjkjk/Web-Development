@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+     <!-- navigation bar on the top -->
+     <div class="nav-bar">
+        <div class="container">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <a href="#" class="toggle-button" id="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <ul class="menu" id="menu">
+                <!-- <div class="bton cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div> -->
+                <li><a href="#">Home/About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Qualification</a></li>
+            </ul>  
+        </div>
+    </div>
+    
+    <div class="box">
+        <div class="box-container">
+            <p>Number: <input type="text" placeholder="Enter a number" id="guess"></p>
+            <div class="container-btn">
+                <button onclick="play()" id="play_btn">Guess</button>
+                <button onclick="restart()" id="rst_btn">Restart</button>
+            </div>
+        </div>
+    
+        <div class="footer" id="footer">
+            <p id="message1"></p>
+            <p id="message2"></p>
+            <p id="message3"></p>
+        </div>
+    </div>
+
+
+
+    <!-- script section -->
+    <script src="./nav-bar menu.js"></script>
+</body>
+</html>
