@@ -1,0 +1,404 @@
+/*-------import google font-------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* white-space: normal;  */
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    /* background: url(./website-background-image-size-psd-vector-photo.jpg); */
+}
+
+.container{
+    /* max-width: 1300px; */
+    padding:0 100px;
+    margin: auto;
+
+}
+/*-------nav-bar styles-------*/
+.nav-bar{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background: #171c24;
+
+
+}
+
+
+.nav-bar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav-bar .logo a span{
+    color: #33ffff;
+}
+
+.nav-bar .logo a{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.nav-bar .menu{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-bar .menu li{
+    list-style: none;
+    display: inline-block;
+    line-height: 70px;
+}
+
+.nav-bar .menu li a{
+    color: rgba(255, 255, 255, 0.911);
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    padding: 12px 30px;
+    border-radius: 7px;
+}
+
+.nav-bar .menu li a:hover{
+    background: #323c4e;
+    
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+        /* Gguess box styling  */
+.guess-box{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.box-container{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    position: relative;
+    background: #fff;
+    display: grid;
+    /* justify-items: center; */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 50%;
+    padding: 10px 0px;
+
+}
+
+.box-container::after {
+    position: absolute;
+    content: "Please enter a number between 1 and 100";
+    transform: translate(6%, -55%);
+    background: #fff;
+    padding: 8px;
+}
+
+/* .container h3{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+
+
+} */
+
+.box-container p{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px 0 30px 0;
+}
+.box-container p input{
+    margin-left: 40px;
+}
+
+
+.container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 4%;
+}
+
+
+button{
+    background-color: #fff;
+    border: 4px double #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 15px;
+
+}
+.guess-footer{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    position: relative;
+    margin-top: 10px;
+    background: #fff;
+    display: flex;
+    /* justify-items: center; */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 50%;
+    padding: 20px 0px;
+    font-weight: 600;
+    /* white-space: normal;  */
+    word-wrap: break-word; 
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+
+/* ---------Footer styling --------- */
+/* Footer Content */
+.footer{
+    position: fixed;
+    width: 100%;
+    background: #06283D;
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.footer-content .box{
+    padding: 20px 20px;
+}
+
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* .box .content{
+    margin: 20px 0 0 0;
+} */
+
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+    margin: 0 10px;
+    color: white;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: #34495e;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.left .content .social a span:hover{
+    background: cyan;
+    box-shadow:  0 0 5px #33ffff,
+                 0 0 10px #66ffff;
+}
+.footer-content .left{
+    width: 50%;
+}
+.footer-content .right{
+    width: 50%;
+}
+
+.footer-content .right .content, .footer-content .right>h2{
+    display: block;
+    margin-left: 200px;
+}
+
+
+
+@media (max-width: 1531px){
+    .about .about-content-left img{
+        height: 470px;
+        width: 520px;
+    }
+    
+}
+@media (max-width: 1434px){
+    .container{
+        padding:0 50px;
+        margin: auto;
+    }
+}
+@media all and (max-width: 1390px){
+    .box-container::after {
+        position: absolute;
+        transform: translate(6%, -55%);
+        padding: 5px;
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 1142px){
+    .nav-bar .menu{
+        margin-right: 0px;
+    }
+    
+}
+@media (max-width: 1140px){
+    button{
+        border: 4px double #000;
+        font-size: 12px;
+        cursor: pointer;
+        padding: 7px 13px;
+    
+    }
+    .guess-box .box-container input{
+        width: 50%;
+
+    }
+}
+@media (max-width: 1084px){
+    .box-container::after {
+        content: "Enter number 1-100";
+        background: #fff;
+    }
+    .guess-footer{
+    font-size: 13px;
+    }
+}
+@media (max-width: 974px){
+    .box-container p input{
+        margin-left: 10px;
+    }
+}
+
+
+
+@media all and (max-width: 948px){
+    /* Nav bar section */
+    .nav-bar{
+        padding: 13.5px 0;
+        align-items: center;
+    }
+    .nav-bar .menu{
+        display: block;
+        position: fixed;
+        top: 73px;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: #171c24;
+        padding: 40px 0;
+        text-align: center;
+        z-index: -1;
+    }
+
+    .nav-bar ul li, .nav-bar ul ul li{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-bar .menu ul{
+        top: 70px;
+        position: static;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-bar .menu li a:hover{
+        /* color: rgb(71, 52, 245); */
+        /* border-radius: 5px;
+        box-shadow: 0 0 5px #33ffff,
+                    0 0 5px #66ffff; */
+        color: #323c4e;
+        background: none;
+    }
+    .show{
+        display: block;
+        color: rgba(255, 255, 255, 0.911);
+        font-size: 26px;
+        font-weight: 500;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover{
+        color: #323c4e;
+        background: none;
+
+    }
+    .icon{
+        display: block;
+        color: rgba(255, 255, 255, 0.911);
+        font-size: 26px;
+        cursor: pointer;
+        line-height: 45px;
+    }
+
+    .show + a, .nav-bar .menu{
+        display: none;
+    }
+
+
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+
+
+    /* menu button */
+    .toggle-button{
+        display: flex;
+    }
+    .menu.active{
+        display: block;
+    }
+
+}
+
+
+
+@media (max-width: 721px){
+    .container{
+        padding:0 23px;
+    }
+    
+}
+
+@media (max-width: 611px){
+    .container{
+        padding:0 23px;
+    }
+}
