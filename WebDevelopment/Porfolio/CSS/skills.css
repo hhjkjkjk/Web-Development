@@ -1,0 +1,963 @@
+/*-------import google font-------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.container{
+    padding:0 100px;
+    margin: auto;
+
+}
+/*-------nav-bar styles-------*/
+.nav-bar{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background: #171c24;
+
+}
+
+
+.nav-bar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar .logo a span{
+    color: crimson;
+}
+
+.nav-bar .logo a{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.nav-bar .menu{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-bar .menu li{
+    list-style: none;
+    display: inline-block;
+    line-height: 70px;
+}
+
+.nav-bar .menu li a{
+    color: rgba(255, 255, 255, 0.911);
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+    padding: 12px 30px;
+    border-radius: 7px;
+}
+
+.nav-bar .menu li a:hover{
+    background: #323c4e;
+    
+}
+
+
+.show, .icon, input{
+    display: none;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* ---------Skills styling --------- */
+.skills{
+    background: #f8f8f8;
+    text-align: justify;
+}
+.skills .welcm{
+    margin: 73px 0 67px 0px;
+    width: 100%;
+    min-height: calc(100vh - 73px);
+}
+.skills h1{
+    padding-top: 10px;
+    font-size: 100px;
+    font-weight: 500;
+}
+.skills .header span:nth-child(1){
+    font-weight: bold;
+    color: #3392ff;
+}
+.skills .header span:nth-child(2){
+    font-weight: bold;
+    color: yellow;
+}
+.skills .welcm .welcm-content{
+    padding-top: 63px;
+    padding-bottom: 48px;
+    margin: 0 40px;
+    font-size: 30px;
+}
+.skills .welcm .welcm-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 230px;
+}
+.skills .welcm .welcm-logo img:nth-child(1){
+    width: 400px;
+    height: 440px;
+}
+.skills .welcm .welcm-logo img:nth-child(2){
+    width: 490px;
+    height: 440px;
+}
+
+
+
+
+.skills .skills-content .css, .skills .skills-content .ecma{
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+.css{
+    min-height: calc(100vh - 73px);
+}
+
+.css .css-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+}
+.css .title{
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.css .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 340px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transform: translateX(-50%);
+}
+.css .title::after{
+    content: "Cascading Style Sheets";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    font-size: 25px;
+    color: #3392ff;
+    padding: 1px 5px;
+    background: #f8f8f8;
+    transform: translateX(-50%);
+}
+.css .css-content .card{
+
+    padding: 20px 20px;
+    margin-top: 100px;
+
+}
+.css .css-content .card:nth-child(1){
+    width: 45%;
+}
+.css .css-content .card:nth-child(2){
+    width: 55%;
+}
+.css .css-content .card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.css .css-content .box{
+    display: block;
+    padding: 40px 0;
+    
+}
+
+.css .text{
+    display: flex;
+    justify-content: center;
+    top: 0;
+    margin-bottom: 10px;
+    font-size: 41px;
+    font-weight: 600;
+}
+
+
+
+.css .css-content p{
+    font-size: 22px;
+}
+
+.css .css-content button{
+    display: inline-block;
+    background: crimson;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.css .css-content button:hover{
+    color: crimson;
+    background: none;
+    transform: scale(1.05);
+}
+.css .css-content .designs{
+    position: relative;
+}
+.css .css-content .design-dropdown{
+    position: absolute;
+    top: 15%;
+    margin-left: 205px;
+    background: white;
+    padding: .4rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.css .css-content .design-dropdown li{
+    display: inline-block;
+}
+.designs > .design-button:focus + .design-dropdown{
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.css .css-content .designs li{
+    list-style: none;
+}
+.css .css-content .designs a{
+    display: inline-block;
+    background: crimson;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 12px 20px;
+    margin-top: 4px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.css .css-content .designs a:hover{
+    color: crimson;
+    background: none;
+    transform: scale(1.05);
+}
+
+
+
+
+
+.ecma{
+    min-height: calc(100vh - 73px);
+}
+
+.ecma .ecma-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+}
+.ecma .title{
+    position: relative;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.ecma .title::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 230px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transform: translateX(-50%);
+}
+.ecma .title::after{
+    content: "JavaScript";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    font-size: 25px;
+    color: yellow;
+    padding: 1px 5px;
+    background: #f8f8f8;
+    transform: translateX(-50%);
+}
+.ecma .ecma-content .card{
+    padding: 20px 20px;
+    margin-top: 100px;
+}
+.ecma .ecma-content .card:nth-child(1){
+    width: 55%;
+}
+.ecma .ecma-content .card:nth-child(2){
+    width: 45%;
+}
+.ecma .ecma-content .card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.ecma .ecma-content .box{
+    display: block;
+    padding: 40px 0;
+}
+
+.ecma .text{
+    display: flex;
+    justify-content: center;
+    top: 0;
+    margin-bottom: 10px;
+    font-size: 41px;
+    font-weight: 600;
+}
+
+
+
+.ecma .ecma-content p{
+    font-size: 22px;
+}
+
+.ecma .ecma-content a{
+    display: inline-block;
+    background: crimson;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.ecma .ecma-content a:hover{
+    color: crimson;
+    background: none;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------Footer styling --------- */
+/* Footer Content */
+.footer{
+    width: 100%;
+    background: #06283D;
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-content .box{
+    padding: 20px 100px;
+}
+
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.left .content .social{
+    margin: 10px 0 0 0;
+}
+
+.left .content .social a{
+    margin-right: 20px;
+    color: white;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: #34495e;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.left .content .social a span:hover{
+    background: crimson;
+}
+.footer-content .left .content{
+    margin-top: 3px;
+}
+
+
+@media (max-width: 1748px){
+    .skills .welcm .welcm-content{
+        font-size: 27px;
+    }
+    .skills .welcm .welcm-logo{
+        margin: 0 170px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(1){
+        width: 380px;
+        height: 420px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(2){
+        width: 490px;
+        height: 440px;
+    }
+    .css .css-content .box{
+        padding: 25px 0; 
+    }
+    .css .text{
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    .css .css-content p{
+        font-size: 22px;
+    }
+
+    .ecma .ecma-content .box{
+        padding: 25px 0; 
+    }
+    .ecma .text{
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+    .ecma .ecma-content p{
+        font-size: 22px;
+    }
+
+}
+@media (max-width: 1630px){
+    .skills .welcm .welcm-content{
+        font-size: 26px;
+    }
+    .skills .welcm .welcm-logo{
+        margin: 0 130px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(1){
+        width: 360px;
+        height: 400px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(2){
+        width: 470px;
+        height: 420px;
+    }
+    .css .css-content .box{
+        padding: 21px 0; 
+    }
+    .css .text{
+        margin-bottom: 10px;
+        font-size: 33px;
+    }
+    .css .css-content p{
+        font-size: 21px;
+    }
+    .ecma .ecma-content .box{
+        padding: 21px 0; 
+    }
+    .ecma .text{
+        margin-bottom: 10px;
+        font-size: 33px;
+    }
+    .ecma .ecma-content p{
+        font-size: 21px;
+    }
+}
+@media (max-width: 1531px){
+    .about .about-content-left img{
+        height: 470px;
+        width: 520px;
+    }
+    .skills h1{
+        font-size: 90px;
+    }
+    .skills .welcm .welcm-content{
+        font-size: 23px;
+    }
+    .skills .welcm .welcm-logo{
+        margin: 0 100px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(1){
+        width: 310px;
+        height: 350px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(2){
+        width: 420px;
+        height: 370px;
+    }
+    
+}
+@media (max-width: 1434px){
+    .container{
+        padding:0 50px;
+        margin: auto;
+    }
+    .about .about-content-left img{
+        height: 390px;
+        width: 420px;
+    }
+    .about .about-content-left{
+        width: 40%;
+    }
+    .about .about-content-right{
+        width: 60%;
+    }
+    .skills h1{
+        font-size: 83px;
+    }
+    .skills .welcm .welcm-content{
+        font-size: 22px;
+    }
+    .skills .welcm .welcm-logo{
+        margin: 0 100px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(1){
+        width: 280px;
+        height: 320px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(2){
+        width: 390px;
+        height: 350px;
+    }
+    
+}
+
+
+@media (max-width: 1234px){
+    .about .about-content-left img{
+        height: 360px;
+        width: 390px;
+    }
+    .about .about-content-right .text{
+        font-size: 22px;
+    }
+    .skills h1{
+        font-size: 78px;
+    }
+    .skills .welcm .welcm-content{
+        font-size: 21px;
+    }
+    .skills .welcm .welcm-logo{
+        margin: 0 100px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(1){
+        width: 270px;
+        height: 310px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(2){
+        width: 380px;
+        height: 340px;
+    }
+    .css .css-content .box{
+        padding: 18px 0; 
+    }
+    .css .text{
+        margin-bottom: 10px;
+        font-size: 31px;
+    }
+    .css .css-content p{
+        font-size: 19px;
+    }
+    .ecma .ecma-content .box{
+        padding: 18px 0; 
+    }
+    .ecma .text{
+        margin-bottom: 10px;
+        font-size: 31px;
+    }
+    .ecma .ecma-content p{
+        font-size: 19px;
+    }
+}
+@media (max-width: 1142px){
+    .nav-bar .menu{
+        margin-right: 0px;
+    }
+    
+}
+@media(max-width: 1124px){
+    .skills h1{
+        font-size: 64px;
+    }
+    .skills .welcm .welcm-content{
+        font-size: 21px;
+    }
+    .skills .welcm .welcm-logo{
+        margin: 0 70px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(1){
+        width: 230px;
+        height: 270px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(2){
+        width: 340px;
+        height: 300px;
+    }
+}
+@media (max-width: 1114px){
+    .about .about-content .column{
+        width: 50%;
+    }
+    .about .about-content-left img{
+        height: 390px;
+        width: 420px;
+    }
+    .about .about-content-left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content-right{
+        flex: 100%;
+    }
+    .about .about-content-right a{
+        font-size: 20px;
+        padding: 10px 15px;
+        margin-top: 20px;
+    }
+    .services .services-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: left;   
+    }
+    .css .css-content .card:nth-child(1){
+        width:100%;
+    }
+    .css .css-content .card:nth-child(2){
+        width:100%;
+    }
+    .css .css-content .box{
+        padding: 18px 0; 
+    }
+    .css .text{
+        margin-bottom: 0;
+    }
+
+    .ecma .ecma-content .card:nth-child(1){
+        width:100%;
+    }
+    .ecma .ecma-content .card:nth-child(2){
+        width:100%;
+    }
+    .ecma .ecma-content .box{
+        padding: 18px 0; 
+    }
+    .ecma .text{
+        margin-bottom: 0;
+    }
+}
+@media all and (max-width: 948px){
+    /* Nav bar section */
+    .nav-bar{
+        padding: 13.5px 0;
+        align-items: center;
+    }
+    .nav-bar .menu{
+        display: block;
+        position: fixed;
+        top: 73px;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: #171c24;
+        padding: 40px 0;
+        text-align: center;
+        z-index: -1;
+    }
+
+    .nav-bar ul li, .nav-bar ul ul li{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-bar .menu ul{
+        top: 70px;
+        position: static;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-bar .menu li a:hover{
+        color: #323c4e;
+        background: none;
+    }
+    .show{
+        display: block;
+        color: rgba(255, 255, 255, 0.911);
+        font-size: 26px;
+        font-weight: 500;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover{
+        color: #323c4e;
+        background: none;
+
+    }
+    .icon{
+        display: block;
+        color: rgba(255, 255, 255, 0.911);
+        font-size: 26px;
+        cursor: pointer;
+        line-height: 45px;
+    }
+
+    .show + a, .nav-bar .menu{
+        display: none;
+    }
+
+
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+
+    /* Home section */
+    .home .home-content .text-1{
+        font-size: 26px;
+    }
+    
+    .home .home-content .text-2{
+        font-size: 70px;
+        
+    }
+    
+    .home .home-content .text-3{
+        font-size: 34px;
+    }
+
+    /* menu button */
+    .toggle-button{
+        display: flex;
+    }
+    .menu.active{
+        display: block;
+    }
+    .skills h1{
+        font-size: 50px;
+    }
+    .skills .welcm .welcm-content{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-size: 21px;
+    }
+    .skills .welcm .welcm-logo{
+        margin: 0 50px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(1){
+        width: 210px;
+        height: 250px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(2){
+        width: 300px;
+        height: 280px;
+    }
+}
+@media (max-width:800px){
+    .skills h1{
+        font-size: 42px;
+    }
+    .skills .welcm .welcm-content{
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+    .skills .welcm .welcm-logo{
+        margin: 0 25px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(1){
+        width: 180px;
+        height: 220px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(2){
+        width: 260px;
+        height: 250px;
+    }
+}
+@media (max-width: 721px){
+    .container{
+        padding:0 23px;
+    }
+    .home .home-content .text-1{
+        font-size: 25px;
+    }
+    
+    .home .home-content .text-2{
+        font-size: 60px;
+        
+    }
+    
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+
+    .home .home-content a{
+        font-size: 20px;
+        padding: 8px 18px;
+    }
+    .footer-content .right .content, .footer-content .right>h2{
+        font-size: 14px;
+    }
+    .footer-content .left .content, .footer-content .left>h2{
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 611px){
+    .container{
+        padding:0 23px;
+    }
+    .home .home-content .text-1{
+        font-size: 25px;
+    }
+    
+    .home .home-content .text-2{
+        font-size: 50px;
+        
+    }
+    
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .services .services-content .card{
+        width: 100%;
+    }
+    .skills h1{
+        font-size: 35px;
+    }
+    .skills .welcm .welcm-content{
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+    .skills .welcm .welcm-logo{
+        margin: 0 20px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(1){
+        width: 140px;
+        height: 180px;
+    }
+    .skills .welcm .welcm-logo img:nth-child(2){
+        width: 220px;
+        height: 210px;
+    }
+    .css .title::after{
+        bottom: -30px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 510px){
+    .skills h1{
+        font-size: 27px;
+    }
+}
+@media (max-width: 420px){
+    .left .content .social a{
+        margin-right: 10px;
+        color: white;
+    }
+    .skills h1{
+        font-size: 24px;
+    }
+    .skills .welcm .welcm-content{
+        font-size: 17px;
+    }
+}
